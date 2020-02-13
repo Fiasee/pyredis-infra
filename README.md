@@ -24,7 +24,9 @@
    ```
 
 6. Run ansible playbook;
-    ```ansible-playbook main.yml```
+    ```
+    ansible-playbook main.yml
+    ```
 
 7. Thats it your k8s cluster is ready
 
