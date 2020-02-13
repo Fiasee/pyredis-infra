@@ -2,7 +2,11 @@
 
 1. Clone the Repo
 
-2. ```vagrant up -> vagrant ssh```
+2. Run
+    ```
+    vagrant up
+    vagrant ssh
+    ```
 
 3. Run inside vagrant vm;
     ```
@@ -11,7 +15,8 @@
     ```
 
 4. AWS Configure
-   run aws configure and enter your IAM cred and region
+   ```aws configure```
+    and enter your IAM cred and region
 
 5. Move into vagrant directory 
    ```
@@ -19,7 +24,7 @@
    ```
 
 6. Run ansible playbook;
-    ansible-playbook main.yml
+    ```ansible-playbook main.yml```
 
 7. Thats it your k8s cluster is ready
 
