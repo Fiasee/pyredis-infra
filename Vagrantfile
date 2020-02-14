@@ -38,7 +38,7 @@ Vagrant.configure("2") do |config|
   config.vm.define "control" do |control|
     config.vm.box = "ubuntu/xenial64"
     config.vm.provider "virtualbox" do |vb|
-      vb.memory = "4096"
+      vb.memory = "1024"
     end
     config.vm.hostname = "test"
     config.vm.network "forwarded_port", guest: 80, host: 8080
