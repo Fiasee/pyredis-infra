@@ -13,9 +13,6 @@ bastion_num: 1
 master_num: 1
 worker1_num: 1
 worker2_num: 1
-# public_eip: 13.229.245.34
-# domain: tezzty.com
-# certbot_admin_email: https@1xy3z.com
 
 ### a map defining the subnets we will build in the VPC ###
 cidr_block: 10.244.0.0/16
@@ -62,13 +59,6 @@ vpc_security_groups:
             - 22
             - 8080
 
-    # my-ip:
-    #   name: allow-all
-    #   description: "Allow all traffic from my ip"
-    #   rules:
-    #     - proto: all
-    #       cidr_ip: 182.55.149.105/32
-
     private-access:
       name: allow-ports-within-vpc
       description: "allow traffic from vpcs public subnets"   
@@ -76,17 +66,11 @@ vpc_security_groups:
         - proto: all
           cidr_ip: 10.244.0.0/16 
         - proto: all
-          cidr_ip: 182.55.149.105/32   
+          cidr_ip: {{ Enter_your_publi_ip }}/32   
 
-### For SSL Certificates ###
-certbot_create_if_missing: true
-certbot_create_standalone_stop_services: [nginx]
-certbot_create_method: standalone
 
-### For Database ###
-# db_name: awesome_db
-# db_user: awesome_user
-# db_user_password: awesome_password
+
+
 
 
 
