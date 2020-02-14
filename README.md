@@ -23,10 +23,12 @@
    cd /vagrant/
    ```
 
-6. Run ansible playbook;
+6. Add your public ip to all.yml file inside group_vars folder
+
+7. Run ansible playbook;
     ```
     ansible-playbook main.yml
     ```
 
-7. Thats it your k8s cluster is ready
+8. Thats it your k8s cluster is ready
 
