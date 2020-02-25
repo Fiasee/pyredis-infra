@@ -6,7 +6,7 @@
         image_id: ami-0e2edfa0743ae2fba
         key_name: "{{ key_name }}"
         region: "{{ region }}"
-        #user_data: "{{ lookup('file', 'bastionen.sh') }}"
+        user_data: "{{ lookup('file', 'bastionen.sh') }}"
         instance_type: "{{ instance_type }}" 
         network_interfaces: 
           - device_index: 0
